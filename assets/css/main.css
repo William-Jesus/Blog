@@ -1,0 +1,96 @@
+/*------------------------------------------------------------------------------
+Layout
+------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;700&display=swap');
+
+:root {
+    --orange: #FCBB6D;
+    --pink: #D8737F;
+    --purple: #685D79;
+    --lilac: #AB6C82;
+    --blue: #475C7A;
+    --reader_background: #fde9d0;
+
+    /*
+    --orange: rgb(252, 187, 109);
+    --pink: rgb(216, 115, 127);
+    --purple: rgb(104, 93, 121);
+    --lilac: rgb(171, 108, 130);
+    --blue: rgb(71, 92, 122);
+    --reader_background: rgb(253, 233, 208);
+    */
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+a, button {
+    transition: all .1s ease-in-out;
+}
+
+.section {
+    padding: 2rem 0rem;
+    background-color: var(--purple);
+}
+
+.title-1 {
+    font-size: 3.2rem;
+}
+
+.title-2 {
+    font-size: 2.8rem;
+}
+
+.section-title {
+    margin: 1.5rem 0 2.5rem;
+    text-align: center;
+    color: var(--orange);
+    font-size: 2.5rem;
+}
+
+.section.section-title {
+    padding: 9rem 0 4rem;
+    margin: 0;
+    background-color: var(--blue);
+}
+
+.subtitle {
+    font-size: 1.6rem;
+}
+
+.site-name {
+    color: var(--orange);
+}
+
+.pagination-default {
+    justify-content: center;
+}
+
+.pagination-default .page-link {
+    background-color: var(--pink);
+    color: var(--orange);
+    border: 1px solid var(--purple);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+/*------------------------------------------------------------------------------
+Header
+------------------------------------------------------------------------------*/
