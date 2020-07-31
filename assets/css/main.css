@@ -83,7 +83,6 @@ a, button {
     display: inline-block;
     padding: 10px 20px;
     border: none;
-    border-radius: 3px;
     font-weight: 700;
 }
 
@@ -95,4 +94,43 @@ p {
 }
 /*------------------------------------------------------------------------------
 Header
+------------------------------------------------------------------------------*/
+.site-header .navbar-brand,
+.site-header .navbar-brand:visited,
+.site-header .navbar-nav .nav-link,
+.site-header .navbar-nav .nav-link:visited {
+    color: var(--purple);
+}
+.site-header .navbar-brand:hover{
+    color: var(--purple);
+}
+.site-header{
+    border-bottom:solid 2px var(--purple);
+    background-color: #fff;
+    box-shadow: 10px 0px 5px var(--purple);
+}
+/*------------------------------------------------------------------------------
+Hero
+------------------------------------------------------------------------------*/
+.site-hero h1 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+.site-hero h2{
+    font-size: 1.6rem;
+}
+.site-hero{
+    background:linear-gradient(#483e57de, rgba(57, 48, 133, 0.76)), url(../images/home-banner.jpg)no-repeat center;
+    background-size: cover;
+    padding: 180px 0px;
+    text-align: center;
+    background-color: var(--blue);
+    color: var(--pink)
+}
+.site-hero h1 span{
+    color: var(--orange)
+}
+
+/*------------------------------------------------------------------------------
+Post List
 ------------------------------------------------------------------------------*/
