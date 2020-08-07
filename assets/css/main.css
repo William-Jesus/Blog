@@ -35,7 +35,7 @@ a, button {
     transition: all .1s ease-in-out;
 }
 
-.section {
+section {
     padding: 2rem 0rem;
     background-color: var(--purple);
 }
@@ -49,15 +49,10 @@ a, button {
 }
 
 .section-title {
-    margin: 1.5rem 0 2.5rem;
+    padding: 9rem 0 4rem;
     text-align: center;
     color: var(--orange);
     font-size: 2.5rem;
-}
-
-.section.section-title {
-    padding: 9rem 0 4rem;
-    margin: 0;
     background-color: var(--blue);
 }
 
@@ -90,7 +85,11 @@ a, button {
     outline: none;
 }
 p {
-    color:blue
+}
+
+.btn-pink{
+    background-color: var(--pink);
+    color: var(--orange)
 }
 /*------------------------------------------------------------------------------
 Header
@@ -112,13 +111,16 @@ Header
 /*------------------------------------------------------------------------------
 Hero
 ------------------------------------------------------------------------------*/
+
 .site-hero h1 {
     margin-bottom: 20px;
     font-size: 3rem;
 }
+
 .site-hero h2{
     font-size: 1.6rem;
 }
+
 .site-hero{
     background:linear-gradient(#483e57de, rgba(57, 48, 133, 0.76)), url(../images/home-banner.jpg)no-repeat center;
     background-size: cover;
@@ -127,10 +129,131 @@ Hero
     background-color: var(--blue);
     color: var(--pink)
 }
-.site-hero h1 span{
+
+.site-hero h1 span {
     color: var(--orange)
 }
 
 /*------------------------------------------------------------------------------
 Post List
 ------------------------------------------------------------------------------*/
+
+.post-item {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #fde9d0;
+    color: var(--purple)
+}
+
+.post-item-content h3 {
+    margin-bottom: 30px;
+    color: var(--purple);
+    font-size: 2rem;
+}
+
+.post-item.item-highlight h3 {
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.post-item-meta {
+	display: flex;
+    justify-content:space-around;
+    align-items: baseline;
+    color: var(--pink);
+}
+
+/*------------------------------------------------------------------------------
+Footer
+------------------------------------------------------------------------------*/
+
+.site-footer, .sociais-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sociais-item {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.sociais-item i {
+    font-size: 1.8rem;
+}
+
+.sociais-item li {
+    margin-left: 10px;
+}
+
+.sociais-item a,
+.sociais-item a:visited {
+    color: var(--orange);
+    transition: 0.3s ease;
+}
+
+.sociais-item a:hover {
+    color: var(--pink);
+}
+
+.site-footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.site-footer {
+    padding: 0.5rem;
+    background-color: var(--blue);
+    color: var(--orange);
+}
+
+/*------------------------------------------------------------------------------
+Post Page
+------------------------------------------------------------------------------*/
+
+.post-page .post-item-meta {
+    justify-content:space-between;
+    font-size: 0.9rem;
+
+}
+
+.post-page .post-item-meta .post-author,
+.post-page .post-item-meta .post-date {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/*------------------------------------------------------------------------------
+Sidebar
+------------------------------------------------------------------------------*/
+
+.sidebar-default {
+    padding: 15px 10px;
+    border-radius: 3px;
+    background-color: var(--blue);
+    box-shadow: var(--lilac) 5px 5px 0px 0px;
+
+}
+
+.sidebar-default h2 {
+    text-align: center;
+    color: var(--pink);
+}
+
+.sidebar-default .posts-links {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: var(--pink)
+}
+
+.sidebar-default .posts-links Li {
+    margin: 0px 0px 10px;
+}
+
+.sidebar-default .posts-links li a {
+    color: var(--pink);
+    text-decoration: underline;
+}
