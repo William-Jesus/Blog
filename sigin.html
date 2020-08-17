@@ -10,15 +10,68 @@
     <title>Blog Project - Post</title>
   </head>
   <body class="sign-in-page">
-    Sign in Page
-
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html" title="Home">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="sigin.html">Sign in<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="section_min">
+      <form class="tip-signin" action="#" method="POST" id="signInForm">
+        <h3>Welcome</h3>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password">
+        </div>
+        <button type="submit" class="btn btn-orange">
+          Sign in
+        </button>
+    </section>
+    <footer class="site-footer">
+      <p>The Blog Project</p>
+      <ul class="sociais-item">
+        <li>
+          <a href="#" title="facebook">
+          <i class="fab fa-facebook-square"> </i>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="twitter">
+          <i class="fab fa-twitter-square"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="instagran">
+          <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
     <script src="vendor/js/jquery-3.5.1.min.js"></script>
     <script src="vendor/js/popper.min.js"></script>
     <script src="vendor/js/bootstrap.4.5.0.min.js"></script>
 
     <script>
-      jQuery(document).ready(function($) {
-        //
+	    jQuery(document).ready(function($) {
+		    $('#signInForm').on('submit', function(event) {
+			    event.preventDefault();
+			    event.stopPropagation();
+			    window.open('dashboard/index.html', '_self');
+		    })
       });
     </script>
   </body>
