@@ -1,33 +1,6 @@
-<!doctype html>
-<html lang="pt-br">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="vendor/css/bootstrap.4.5.0.min.css">
-  <link rel="stylesheet" href="vendor/css/fontawsome_all.5.0.min.css">
-
-  <link rel="stylesheet" href="assets/css/main.css">
-  <title>Blog Project</title>
-</head>
-
-<body class="home-page">
-  <header class="site-header">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="index.html" title="Home">Home</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="sigin.html">Sign in<span class="sr-only">(current)</span></a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+<?php
+require_once "./templates/header.php";
+?>
   <section class="site-hero">
     <h1><span>The Blog Project </span>is a learning experience</h1>
     <h2>Check out our latests posts to find some good work done in the web development world</h2>
@@ -112,29 +85,7 @@
       </div>
     </section>
   </main>
-  <footer class="site-footer">
-    <p>The Blog Project</p>
-    <ul class="sociais-item">
-      <li>
-        <a href="#" title="facebook">
-        <i class="fab fa-facebook-square"> </i>
-        </a>
-      </li>
-      <li>
-        <a href="#" title="twitter">
-        <i class="fab fa-twitter-square"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#" title="instagran">
-        <i class="fab fa-instagram"></i>
-        </a>
-      </li>
-    </ul>
-  </footer>
-  <script src="vendor/js/jquery-3.5.1.min.js"></script>
-  <script src="vendor/js/popper.min.js"></script>
-  <script src="vendor/js/bootstrap.4.5.0.min.js"></script>
-</body>
+  <?php
+  require_once "./templates/footer.php"
+  ?>
 
-</html>
