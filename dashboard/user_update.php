@@ -1,29 +1,10 @@
 <?php
-require_once "templates/header.php"
+require_once "templates/header.php";
+require_once "templates/sidebar.php";
 ?>
   <div class="container-fluid">
     <div class="row">
-      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-        <div class="sidebar-sticky pt-3">
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="index.php">
-                Dashboard
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="posts.php" title="Posts">
-                Posts <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="users.php" title="Users">
-                Users <span class="sr-only">(current)</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <?php echo sidebar(); ?>
 
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
         <div
@@ -62,4 +43,4 @@ require_once "templates/header.php"
     </div>
   </div>
   <?php
-  require_once "tempates/footer.php";
+  require_once "templates/footer.php";

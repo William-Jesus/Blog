@@ -1,5 +1,8 @@
 <?php
+require_once "functions/db_connect.php";
 require_once "./templates/header.php";
+
+
 ?>
   <section class="site-hero">
     <h1><span>The Blog Project </span>is a learning experience</h1>
@@ -25,7 +28,7 @@ require_once "./templates/header.php";
               <hr>
               <div class="post-item-meta">
                 <h4 class="post-author"><em>John Doe</em></h4>
-                <a href="post.html" class="post-link btn btn-pink" title="Continue reading">Continue reading</a>
+                <a href="post.php" class="post-link btn btn-pink" title="Continue reading">Continue reading</a>
                 <p class="post-date">
                 <i class="fa fa-calendar"></i>
                 Jan 1, 2020
@@ -49,7 +52,7 @@ require_once "./templates/header.php";
               <hr>
               <div class="post-item-meta">
                 <h4 class="post-author"><em>John Doe</em></h4>
-                <a href="post.html" class="post-link btn btn-pink" title="Continue reading">Continue reading</a>
+                <a href="post.php" class="post-link btn btn-pink" title="Continue reading">Continue reading</a>
                 <p class="post-date">
                 <i class="fa fa-calendar"></i>
                 Jan 1, 2020
@@ -73,7 +76,7 @@ require_once "./templates/header.php";
               <hr>
               <div class="post-item-meta">
                 <h4 class="post-author"><em>John Doe</em></h4>
-                <a href="post.html" class="post-link btn btn-pink" title="Continue reading">Continue reading</a>
+                <a href="post.php" class="post-link btn btn-pink" title="Continue reading">Continue reading</a>
                 <p class="post-date">
                   <i class="fa fa-calendar"></i>
                   Jan 1, 2020
@@ -86,6 +89,7 @@ require_once "./templates/header.php";
     </section>
   </main>
   <?php
-  require_once "./templates/footer.php"
+  require_once "./templates/footer.php";
+  require_once "functions/db_disconnect.php";
   ?>
 
