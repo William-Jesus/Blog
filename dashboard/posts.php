@@ -2,6 +2,7 @@
 $pageTitle = 'Posts';
 require_once "templates/header.php";
 require_once "templates/sidebar.php";
+require_once "functions/post_helper.php";
 ?>
   <div class="container-fluid">
     <div class="row">
@@ -28,39 +29,21 @@ require_once "templates/sidebar.php";
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Post 01</td>
-                  <td>Joe Doe</td>
-                  <td>01/01/2020</td>
+              <?php
+              $result = get_post();
+              while($post = $result->fetch_object()) { ?>
+              <tr>
+                  <th scope="row"><?php echo $post->id; ?></th>
+                  <td><?php echo $post->title; ?></td>
+                  <td><?php echo $post->slug; ?></td>
+                  <td><?php echo $post->creation_date; ?></td>
                   <td>
-                    <a href="post_update.php" class="btn btn-info" title="Update">
+                    <a href="post_update.php?post_id=<?php echo $post->id;?>" class="btn btn-info" title="Update">
                       Update
                     </a>
                   </td>
                 </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>Post 02</td>
-                  <td>Joe Doe</td>
-                  <td>20/01/2020</td>
-                  <td>
-                    <a href="post_update.php" class="btn btn-info" title="Update">
-                      Update
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>Post 03</td>
-                  <td>Jane Doe</td>
-                  <td>05/02/2020</td>
-                  <td>
-                    <a href="post_update.php" class="btn btn-info" title="Update">
-                      Update
-                    </a>
-                  </td>
-                </tr>
+              <?php } ?>
               </tbody>
             </table>
           </div>
